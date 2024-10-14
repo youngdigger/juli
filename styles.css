@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #333;
+}
+
+header {
+    background-image: url('WhatsApp\ Image\ 2024-10-13\ at\ 20.42.45.jpeg'); /* Imagen de fondo personalizada */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Bloques personalizados */
+.block {
+    background-color: rgb(63, 62, 62);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+.block h2, .block h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #665c5c;
+}
+
+.block p {
+    font-size: 1rem;
+    color: #bfbebe;
+}
+
+.block1 {
+    grid-column: span 3;
+    height: auto;
+    background-color: black;
+}
+
+.block2, .block3, .block7, .block8 {
+    grid-column: span 1;
+}
+
+.block4, .block6, .block9 {
+    grid-column: span 3;
+}
+
+.block5 {
+    grid-column: span 2;
+    height: 250px;
+    width: 200px;
+    /* margin: 0 auto; */
+    /* margin-right: 10px; */
+    margin-left: 720px;
+   
+}
+.block5 .img{
+
+    margin: 0 auto;
+
+}
+
+/* Estilos para imágenes */
+.photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+    /* margin: 0 auto; */
+    /* margin-left: 720px; */
+}
+
+.block3{
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+
+
+}
+.linea{
+
+    height: 10px;
+    background-color:  rgb(63, 62, 62);;
+    border: none;
+
+}
+.block7{
+
+
+    width: 300px;
+    /* justify-content: center; */
+    margin: 0 auto;
+
+}
+.block6 .abajito{
+
+
+
+    color: rgb(240, 237, 237);
+}
