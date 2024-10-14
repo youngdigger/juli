@@ -11,12 +11,13 @@ body {
 }
 
 header {
-    background-image: url('WhatsApp/Image/2024-10-13/at/20.42.45.jpeg'); /* Imagen de fondo personalizada */
-    background-size: cover;
-    background-position: center;
+    background-image: url('WhatsApp/Image/2024-10-13/at/20.42.45.jpeg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover; /* Asegura que la imagen cubra todo el header */
+    background-position: center; /* Centra la imagen */
     color: white;
     text-align: center;
     padding: 60px 20px;
+    min-height: 400px; /* Altura mínima para el encabezado */
 }
 
 header h1 {
@@ -32,7 +33,7 @@ header h1 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 40px;
 }
@@ -47,53 +48,16 @@ header h1 {
     color: #333;
 }
 
-.block h2, .block h3 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    color: #665c5c;
-}
-
-.block p {
-    font-size: 1rem;
-    color: #bfbebe;
-}
-
-.block1 {
-    grid-column: span 3;
-    height: auto;
-    background-color: black;
-}
-
-.block2, .block3, .block7, .block8 {
-    grid-column: span 1;
-}
-
-.block4, .block6, .block9 {
-    grid-column: span 3;
-}
-
-.block5 {
-    grid-column: span 2;
-    height: 250px;
-    margin-left: 720px; /* Ajusta esto según sea necesario */
-}
-
-.block5 .img {
-    margin: 0 auto;
-}
-
-/* Estilos para imágenes */
 .photo {
     width: 100%;
-    height: auto;
+    height: auto; /* Mantiene la relación de aspecto */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
 }
 
 footer {
     text-align: center;
-    justify-content: center;
     background-color: #333;
     color: white;
     padding: 20px;
@@ -101,87 +65,48 @@ footer {
     font-size: 1rem;
 }
 
-.block3 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
-}
-
-.linea {
-    height: 10px;
-    background-color: rgb(63, 62, 62);
-    border: none;
-}
-
-.block7 {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.block6 .abajito {
-    color: rgb(240, 237, 237);
-}
-
-
 /* Media Queries para Responsividad */
 @media (max-width: 800px) {
     header {
-        padding: 40px 10px; /* Ajustar padding en móviles */
+        padding: 40px 10px; /* Reduce el padding para pantallas más pequeñas */
     }
 
     header h1 {
-        font-size: 2.5rem; /* Ajustar tamaño de encabezado */
+        font-size: 2.5rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño para el subtítulo */
     }
 
     .container {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
-        padding: 20px; /* Menos padding */
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas medianas */
     }
 
     .block {
-        margin: 10px 0; /* Margen entre bloques */
-    }
-
-    .block h2, .block h3 {
-        font-size: 1.5rem; /* Ajustar tamaño de subtítulos */
-    }
-
-    .block p {
-        font-size: 0.9rem; /* Ajustar tamaño de párrafo */
-    }
-    .block7{
-        margin: 10px 0;
-
-
-
-
-
-    }
-
-    .block5 {
-        margin-left: 0; /* Quitar margen izquierdo */
-        width: auto; /* Ajustar el ancho */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Ajustar tamaño de texto del pie de página */
+        margin: 10px 0; /* Espaciado entre bloques */
     }
 }
 
 @media (max-width: 500px) {
+    header {
+        padding: 30px 10px; /* Aumenta el padding para mejor apariencia en móviles */
+    }
+
     header h1 {
-        font-size: 2rem; /* Ajustar tamaño de encabezado para pantallas muy pequeñas */
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
     }
 
     .subtitle {
-        font-size: 1.2rem; /* Ajustar tamaño del subtítulo */
+        font-size: 1rem; /* Tamaño de fuente más pequeño para el subtítulo */
     }
 
-    .block h2, .block h3 {
-        font-size: 1.3rem; /* Ajustar tamaño de subtítulos */
+    .container {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+        padding: 20px; /* Reduce el padding en contenedores */
     }
 
-    .block p {
-        font-size: 0.8rem; /* Ajustar tamaño de párrafo */
+    .block {
+        margin: 10px 0; /* Espaciado entre bloques en móviles */
     }
 }
