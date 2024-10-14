@@ -32,7 +32,7 @@ header h1 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
     gap: 20px;
     padding: 40px;
 }
@@ -58,31 +58,16 @@ header h1 {
     color: #bfbebe;
 }
 
+/* Estilos específicos de bloques */
 .block1 {
     grid-column: span 3;
-    height: auto;
     background-color: black;
-}
-
-.block2, .block3, .block7, .block8 {
-    grid-column: span 1;
-}
-
-.block4, .block6, .block9 {
-    grid-column: span 3;
 }
 
 .block5 {
     grid-column: span 2;
-    height: 250px;
-    margin-left: 720px; /* Ajusta esto según sea necesario */
 }
 
-.block5 .img {
-    margin: 0 auto;
-}
-
-/* Estilos para imágenes */
 .photo {
     width: 100%;
     height: auto;
@@ -93,33 +78,11 @@ header h1 {
 
 footer {
     text-align: center;
-    justify-content: center;
     background-color: #333;
     color: white;
     padding: 20px;
     margin-top: 40px;
     font-size: 1rem;
-}
-
-.block3 {
-    display: flex;
-    align-items: end;
-    justify-content: end;
-}
-
-.linea {
-    height: 10px;
-    background-color: rgb(63, 62, 62);
-    border: none;
-}
-
-.block7 {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.block6 .abajito {
-    color: rgb(240, 237, 237);
 }
 
 /* Media Queries para Responsividad */
@@ -133,7 +96,7 @@ footer {
     }
 
     .container {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
         padding: 20px; /* Menos padding */
     }
 
@@ -147,15 +110,6 @@ footer {
 
     .block p {
         font-size: 0.9rem; /* Ajustar tamaño de párrafo */
-    }
-
-    .block5 {
-        margin-left: 0; /* Quitar margen izquierdo */
-        width: auto; /* Ajustar el ancho */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Ajustar tamaño de texto del pie de página */
     }
 }
 
@@ -174,5 +128,9 @@ footer {
 
     .block p {
         font-size: 0.8rem; /* Ajustar tamaño de párrafo */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
     }
 }
