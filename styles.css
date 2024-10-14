@@ -11,13 +11,12 @@ body {
 }
 
 header {
-    background-image: url('WhatsApp Image 2024-10-13 at 20.42.45.jpeg'); /* Asegúrate de que esta ruta sea correcta */
-    background-size: cover; /* Asegura que la imagen cubra todo el header */
+    background-image: url('WhatsApp\ Image\ 2024-10-13\ at\ 20.42.45.jpeg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover; /* Cambia a contain en pantallas más pequeñas si deseas que la imagen se ajuste completamente */
     background-position: center; /* Centra la imagen */
     color: white;
     text-align: center;
     padding: 60px 20px;
-    min-height: 400px; /* Altura mínima para el encabezado */
 }
 
 header h1 {
@@ -68,6 +67,9 @@ footer {
 /* Media Queries para Responsividad */
 @media (max-width: 800px) {
     header {
+        padding: 30px 10px; /* Reduce el padding para pantallas más pequeñas */
+        min-height: 250px; /* Altura mínima más pequeña en móviles */
+        background-size: contain; /* Ajusta la imagen para que no se recorte */
         padding: 40px 10px; /* Reduce el padding para pantallas más pequeñas */
     }
 
@@ -90,6 +92,9 @@ footer {
 
 @media (max-width: 500px) {
     header {
+        padding: 20px 5px; /* Reduce aún más el padding */
+        min-height: 200px; /* Aumenta aún más el tamaño del header en móviles */
+        background-size: contain; /* Mantiene el ajuste */
         padding: 30px 10px; /* Aumenta el padding para mejor apariencia en móviles */
     }
 
