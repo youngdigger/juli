@@ -7,11 +7,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
-    color: #333;
+    color: #d1d1d1;
 }
 
 header {
-    background-image: url('WhatsApp/Image/2024-10-13/at/20.42.45.jpeg'); /* Asegúrate de que esta ruta sea correcta */
+    background-image: url('WhatsApp Image 2024-10-13 at 20.42.45.jpeg'); /* Asegúrate de que esta ruta sea correcta */
     background-size: cover; /* Asegura que la imagen cubra todo el header */
     background-position: center; /* Centra la imagen */
     color: white;
@@ -22,13 +22,13 @@ header {
 
 header h1 {
     font-size: 3rem;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
 }
 
 .subtitle {
     font-size: 1.5rem;
     margin-top: 10px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
 }
 
 .container {
@@ -45,7 +45,7 @@ header h1 {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #333;
+    color: #c8c5c5;
 }
 
 .photo {
