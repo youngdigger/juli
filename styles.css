@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-image: url('WhatsApp\ Image\ 2024-10-13\ at\ 20.42.45.jpeg'); /* Imagen de fondo personalizada */
+    background-image: url('WhatsApp/Image/2024-10-13/at/20.42.45.jpeg'); /* Imagen de fondo personalizada */
     background-size: cover;
     background-position: center;
     color: white;
@@ -75,16 +75,11 @@ header h1 {
 .block5 {
     grid-column: span 2;
     height: 250px;
-    width: 200px;
-    /* margin: 0 auto; */
-    /* margin-right: 10px; */
-    margin-left: 720px;
-   
+    margin-left: 720px; /* Ajusta esto según sea necesario */
 }
-.block5 .img{
 
+.block5 .img {
     margin: 0 auto;
-
 }
 
 /* Estilos para imágenes */
@@ -99,43 +94,85 @@ header h1 {
 footer {
     text-align: center;
     justify-content: center;
-
     background-color: #333;
     color: white;
     padding: 20px;
     margin-top: 40px;
     font-size: 1rem;
-    /* margin: 0 auto; */
-    /* margin-left: 720px; */
 }
 
-.block3{
-
+.block3 {
     display: flex;
     align-items: end;
     justify-content: end;
-
-
-
 }
-.linea{
 
+.linea {
     height: 10px;
-    background-color:  rgb(63, 62, 62);;
+    background-color: rgb(63, 62, 62);
     border: none;
-
 }
-.block7{
 
-
+.block7 {
     width: 300px;
-    /* justify-content: center; */
     margin: 0 auto;
-
 }
-.block6 .abajito{
 
-
-
+.block6 .abajito {
     color: rgb(240, 237, 237);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 800px) {
+    header {
+        padding: 40px 10px; /* Ajustar padding en móviles */
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Ajustar tamaño de encabezado */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        padding: 20px; /* Menos padding */
+    }
+
+    .block {
+        margin: 10px 0; /* Margen entre bloques */
+    }
+
+    .block h2, .block h3 {
+        font-size: 1.5rem; /* Ajustar tamaño de subtítulos */
+    }
+
+    .block p {
+        font-size: 0.9rem; /* Ajustar tamaño de párrafo */
+    }
+
+    .block5 {
+        margin-left: 0; /* Quitar margen izquierdo */
+        width: auto; /* Ajustar el ancho */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Ajustar tamaño de texto del pie de página */
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2rem; /* Ajustar tamaño de encabezado para pantallas muy pequeñas */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Ajustar tamaño del subtítulo */
+    }
+
+    .block h2, .block h3 {
+        font-size: 1.3rem; /* Ajustar tamaño de subtítulos */
+    }
+
+    .block p {
+        font-size: 0.8rem; /* Ajustar tamaño de párrafo */
+    }
 }
