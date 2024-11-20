@@ -11,14 +11,37 @@ body {
 }
 
 header {
-    background-image: url('WhatsApp\ Image\ 2024-10-13\ at\ 20.42.45.jpeg'); /* Asegúrate de que esta ruta sea correcta */
-    background-size: cover; /* Cambia a contain en pantallas más pequeñas si deseas que la imagen se ajuste completamente */
-    background-position: center; /* Centra la imagen */
+
+
     color: white;
     text-align: center;
     padding: 60px 20px;
+    /* width: 670px; */
+    /* height: auto; */
+    margin: 0 auto;
+    position: relative;
+  
 }
+.corazon_derecha{
 
+    position: relative;
+    bottom: 7vw;
+    left: 20vw;
+    width: 26vw;
+    height: auto;
+
+
+}
+.corazaon_izq{
+
+    position: relative;
+    bottom: 7vw;
+    right: 20vw;
+    width: 26vw;
+    height: auto;
+
+
+}
 header h1 {
     font-size: 3rem;
     text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
@@ -46,7 +69,12 @@ header h1 {
     text-align: center;
     color: #c8c5c5;
 }
+.block4{
 
+position: relative;
+left: 32vw;
+bottom: 14vw;
+}
 .photo {
     width: 100%;
     height: auto; /* Mantiene la relación de aspecto */
