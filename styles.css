@@ -72,7 +72,7 @@ header h1 {
 .block4{
 
 position: relative;
-left: 20vw;
+left: 10vw;
 bottom: 5vw;
 }
 .block2{
@@ -102,7 +102,7 @@ height: auto;
     object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
 }
 
-footer {
+.piso {
     text-align: center;
     background-color: #333;
     color: white;
@@ -114,12 +114,13 @@ footer {
 }
 
 /* Media Queries para Responsividad */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     header {
         padding: 30px 10px; /* Reduce el padding para pantallas más pequeñas */
         min-height: 250px; /* Altura mínima más pequeña en móviles */
         background-size: contain; /* Ajusta la imagen para que no se recorte */
         padding: 40px 10px; /* Reduce el padding para pantallas más pequeñas */
+        width: 40vh;
     }
 
     header h1 {
@@ -131,36 +132,65 @@ footer {
     }
 
     .container {
-        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en pantallas medianas */
+        grid-template-columns: repeat(1, 1fr); /* Cambia a dos columnas en pantallas medianas */
+        position:relative;
+        bottom: 10vh;
     }
 
     .block {
-        margin: 10px 0; /* Espaciado entre bloques */
+         margin: 10px 0; 
+        padding: 5vw; 
+        right:14vh;
+        bottom: 4vh;
+        width: 30vh; 
+    }
+  .corazaon_izq{
+    display: none;
+  }
+  .corazon_derecha{
+
+    width: 50vh;
+    left: -6vh;
+  }
+    .block4{
+
+        left:5vh;
+        bottom: 4vh;
+        width: 30vh;
+        height: 95vh;
+        
+
+    }
+    .block3{
+
+        left:3vh;
+        bottom: -8vh;
+        width: 20vh;
+
+    }
+
+    .block2{
+        position: relative;
+       top: -4vh;
+       left: 5vh;
+
+
+    }
+    .piso{
+
+
+        position: absolute;
+        top: 215vh;
+        left: 17.5vh;
+    
+    
+    }
+    .block4{
+        position: relative;
+       top: -4vh;
+       left: 5vh;
+
+
     }
 }
 
-@media (max-width: 500px) {
-    header {
-        padding: 20px 5px; /* Reduce aún más el padding */
-        min-height: 200px; /* Aumenta aún más el tamaño del header en móviles */
-        background-size: contain; /* Mantiene el ajuste */
-        padding: 30px 10px; /* Aumenta el padding para mejor apariencia en móviles */
-    }
-
-    header h1 {
-        font-size: 2rem; /* Tamaño de fuente más pequeño */
-    }
-
-    .subtitle {
-        font-size: 1rem; /* Tamaño de fuente más pequeño para el subtítulo */
-    }
-
-    .container {
-        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
-        padding: 20px; /* Reduce el padding en contenedores */
-    }
-
-    .block {
-        margin: 10px 0; /* Espaciado entre bloques en móviles */
-    }
-}
