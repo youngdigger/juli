@@ -72,9 +72,28 @@ header h1 {
 .block4{
 
 position: relative;
-left: 32vw;
-bottom: 14vw;
+left: 20vw;
+bottom: 5vw;
 }
+.block2{
+
+position: relative;
+right: 100vw;
+top: 90vw;
+width: 12vw;
+height: auto;
+
+}
+.block3{
+    position: relative;
+    right: 3vw;
+    bottom: 10vh;
+    width: 12vw;
+    height: auto;
+    
+
+}
+
 .photo {
     width: 100%;
     height: auto; /* Mantiene la relación de aspecto */
@@ -90,6 +109,8 @@ footer {
     padding: 20px;
     margin-top: 40px;
     font-size: 1rem;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* Media Queries para Responsividad */
